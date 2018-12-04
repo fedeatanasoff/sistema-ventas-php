@@ -68,6 +68,7 @@ session_start();
         $_GET["ruta"] == "clientes" ||
         $_GET["ruta"] == "ventas" ||
         $_GET["ruta"] == "crear-venta" ||
+        $_GET["ruta"] == "logout" ||
         $_GET["ruta"] == "reportes") {
 
         include "modulos/" . $_GET["ruta"] . ".php";
