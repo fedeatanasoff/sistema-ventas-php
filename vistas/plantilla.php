@@ -47,7 +47,10 @@
 
   <?php
 
-    include "modulos/header.php"
+    include "modulos/header.php";
+    include "modulos/menu.php";
+    include "modulos/contenido.php";
+    include "modulos/footer.php";
   ?>
 <!-- ./wrapper -->
 
