@@ -62,7 +62,11 @@
 
       include "modulos/" . $_GET["ruta"] . ".php";
 
+    } else {
+      include "modulos/404.php";
     }
+  } else {
+    include "modulos/inicio.php";
   }
 
   include "modulos/footer.php";
