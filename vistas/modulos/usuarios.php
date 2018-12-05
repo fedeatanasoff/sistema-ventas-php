@@ -89,15 +89,64 @@
 
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header" style="background:#3c8dbc; color:#fff">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Agregar Usuario</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+      <div class="box-body">
+        <div class="form-group">
+          <!-- nombre -->
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control input-lg" name="nuevoNombre" placeholder="ingresar nombre">
+          </div>
+        </div>
+
+        <!-- usuario -->
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-key"></i></span>
+            <input type="text" class="form-control input-lg" name="nuevoUsuario" placeholder="ingresar el nombre de usuario">
+          </div>
+        </div>
+
+        <!-- password -->
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input type="password" class="form-control input-lg" name="nuevoPassword" placeholder="ingresar password">
+          </div>
+        </div>
+
+        <!-- perfil -->
+        <div class="form-group">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-users"></i></span>
+            <select name="nuevoPerfil" id="" class="form-control input-lg">
+              <option value="">Seleccione perfil</option>
+              <option value="Administrador">Administrador</option>
+              <option value="Especial">Especial</option>
+              <option value="Vendedor">Vendedor</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- foto de perfil -->
+        <div class="form-group">
+          <div class="panel"><b>SUBIR FOTO</b></div>
+          <input type="file" name="nuevaFoto" id="nuevaFoto">
+          <p class="help-block">Peso maximo de la foto 200 MB</p>
+          <img src="vistas/img/usuarios/default/anonymous.png" alt="" class="img-thumbnail" width="40px">
+        </div>
+
+        <!--  -->
+        
+      </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+        <button type="submit" class="btn btn-primary" >Guardar usuario</button>
       </div>
     </div>
 
